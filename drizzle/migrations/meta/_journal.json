@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1750233003047,
+      "tag": "0000_sturdy_the_executioner",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1750313366739,
+      "tag": "0001_goofy_micromacro",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1750314777174,
+      "tag": "0002_wakeful_ozymandias",
+      "breakpoints": true
+    }
+  ]
+}
