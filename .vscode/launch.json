@@ -7,6 +7,14 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "Run drizzle-kit",
+            "runtimeExecutable": "drizzle-kit",
+            "cwd": "${workspaceFolder}",
+            "args": []
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "Run ts-node",
             "runtimeExecutable": "ts-node",
             "cwd": "${workspaceFolder}",
