@@ -9,4 +9,6 @@ exports.default = (0, drizzle_kit_1.defineConfig)({
     dbCredentials: {
         url: process.env.DATABASE_URL,
     },
+    strict: true,
+    casing: 'snake_case'
 });
