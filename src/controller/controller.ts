@@ -64,7 +64,6 @@ export const updatetask=async(req:Request, res:Response)=>{
 }
 export const deletetask=async(req:Request, res:Response)=>{
     const id=parseInt(req.params.id, 10);
-    console.log(id);
     try{
         await Taskquery.deletetask(id);
         console.log('User deleted!');

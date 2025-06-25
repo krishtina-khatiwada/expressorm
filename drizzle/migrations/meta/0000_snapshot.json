@@ -1,7 +1,7 @@
 {
   "version": "5",
   "dialect": "mysql",
-  "id": "e0be6e50-0864-4ad6-a6cb-f25fb0d39ea9",
+  "id": "4a19717c-9ef8-4537-855d-b9f6962c5972",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "tables": {
     "Task": {
@@ -14,8 +14,8 @@
           "notNull": true,
           "autoincrement": true
         },
-        "task": {
-          "name": "task",
+        "taskname": {
+          "name": "taskname",
           "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true,
@@ -39,15 +39,6 @@
           ]
         }
       },
-      "uniqueConstraints": {},
-      "checkConstraint": {}
-    },
-    "userPreferences ": {
-      "name": "userPreferences ",
-      "columns": {},
-      "indexes": {},
-      "foreignKeys": {},
-      "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "checkConstraint": {}
     }
