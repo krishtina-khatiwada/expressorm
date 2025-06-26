@@ -1,0 +1,23 @@
+build/Release
+node_modules/
+*.tsbuildinfo
+.npm
+.node_repl_history
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.cache
+.cache/
+echo "node_modules/
+logs/
+*.log
+npm-debug.log*
+.env
+.vscode/
+dist/
+build/
+node_modules/
+.env/
+
