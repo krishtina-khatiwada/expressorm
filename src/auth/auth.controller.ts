@@ -1,6 +1,6 @@
 import type { Request,Response } from 'express';
 import * as authquery from "./auth.service";
-
+//controller for authentication
 /* Recieves the register or login request,
  checks if the request body is correct,
  token is returned to the client */
