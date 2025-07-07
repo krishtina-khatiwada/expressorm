@@ -1,11 +1,15 @@
 import express from 'express';
-import * as Taskcontroller from '../controller/controller';
+import { registeruser, loginuser } from '../auth/auth.controller';
+import { authmiddleware} from '../auth/auth.middleware';
+import { getTask,createTask } from '../controller/controller';
 
 const router= express.Router();
 
-router.post('/', Taskcontroller.createTask);
-router.get('/',Taskcontroller.getTask);
-router.put('/:id',Taskcontroller.updatetask);
-router.delete('/:id',Taskcontroller.deletetask);
+router.post('/auth/register', registeruser);
+router.post('/auth/login', loginuser);
+
+router.get('/task', authmiddleware, getTask);
+router.post('/task', authmiddleware, createTask);
+
 
 export default router;
