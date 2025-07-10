@@ -9,6 +9,7 @@ This is a Node.js/TypeScript backend app with JWT authentication.
 - TypeScript
 - Express
 - dotenv
+- express-graphql
 
 ##  Project Structure
 
@@ -20,7 +21,7 @@ This is a Node.js/TypeScript backend app with JWT authentication.
 
 1. **Clone the repo:**
 
-   git clone https://github.com/yourusername/yourproject.git
+   git clone https://github.com/krishtina-khatiwada/expressorm
 
 2. **Install dependencies:**
 
