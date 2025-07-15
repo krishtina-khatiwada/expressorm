@@ -1,11 +1,19 @@
 import 'dotenv/config';
-
 import express from 'express';
-import routes from './routes/routes';
-
+import {graphqlHTTP} from 'express-graphql';
+import cors from 'cors';
+import { schema} from './schema/schema.js';
+import {root} from './service/service.js';
 const app= express();
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(routes);
+app.use(cors());
 
-app.listen(3000);
+app.use('/graphql',graphqlHTTP({
+  schema,
+  rootValue:root,
+  graphiql:true
+}
+
+))
+app.listen(4000,()=>{
+  console.log('Server running on http://localhost:4000/graphql');
+});
